@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Git
+.git/
+.gitignore
+
+# IDEs / editores
+.vscode/
+.idea/
+
+# Archivos temporales
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

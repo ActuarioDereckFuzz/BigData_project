@@ -1,0 +1,16 @@
+services:
+
+  spark:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+
+    image: bigdata-spark:0.1
+
+    working_dir: /workspace
+
+    volumes:
+      - .:/workspace
+
+    stdin_open: true
+    tty: true

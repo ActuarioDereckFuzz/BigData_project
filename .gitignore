@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Spark
+metastore_db/
+derby.log
+spark-warehouse/
+
+# Datos generados o voluminosos
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/_smoke_test/*
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
