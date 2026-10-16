@@ -1,0 +1,1729 @@
+{
+  "notebook": "05_01_diagnostico_benchmarking",
+  "periodo": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "filtros": {
+    "fecha": "fecha_inicio <= tpep_pickup_datetime < fecha_fin_exclusiva",
+    "PULocationID": "no nulo",
+    "DOLocationID": "no nulo",
+    "trip_distance": "0 < distancia < 100",
+    "total_amount": "monto >= 0"
+  },
+  "resultados": {
+    "zonas_agregadas": [
+      {
+        "PULocationID": 1,
+        "num_viajes": 1247,
+        "distancia_media": 3.663977546110665,
+        "importe_medio": 93.69793103448276
+      },
+      {
+        "PULocationID": 2,
+        "num_viajes": 57,
+        "distancia_media": 14.34526315789474,
+        "importe_medio": 66.23298245614035
+      },
+      {
+        "PULocationID": 3,
+        "num_viajes": 1540,
+        "distancia_media": 9.19548051948052,
+        "importe_medio": 38.73749350649352
+      },
+      {
+        "PULocationID": 4,
+        "num_viajes": 67935,
+        "distancia_media": 2.920888201957756,
+        "importe_medio": 23.91306292779865
+      },
+      {
+        "PULocationID": 5,
+        "num_viajes": 2,
+        "distancia_media": 11.83,
+        "importe_medio": 46.14
+      },
+      {
+        "PULocationID": 6,
+        "num_viajes": 563,
+        "distancia_media": 7.310976909413853,
+        "importe_medio": 26.75795737122558
+      },
+      {
+        "PULocationID": 7,
+        "num_viajes": 25875,
+        "distancia_media": 4.293086763285025,
+        "importe_medio": 26.670443671497615
+      },
+      {
+        "PULocationID": 8,
+        "num_viajes": 215,
+        "distancia_media": 7.520093023255813,
+        "importe_medio": 69.93213953488372
+      },
+      {
+        "PULocationID": 9,
+        "num_viajes": 722,
+        "distancia_media": 7.90556786703601,
+        "importe_medio": 35.42433518005541
+      },
+      {
+        "PULocationID": 10,
+        "num_viajes": 14008,
+        "distancia_media": 12.050956596230725,
+        "importe_medio": 73.01091804683058
+      },
+      {
+        "PULocationID": 11,
+        "num_viajes": 1159,
+        "distancia_media": 8.60711820534944,
+        "importe_medio": 38.74247627264884
+      },
+      {
+        "PULocationID": 12,
+        "num_viajes": 16445,
+        "distancia_media": 4.417397993311038,
+        "importe_medio": 33.37021891152325
+      },
+      {
+        "PULocationID": 13,
+        "num_viajes": 246442,
+        "distancia_media": 4.3809996266869895,
+        "importe_medio": 32.31233438293801
+      },
+      {
+        "PULocationID": 14,
+        "num_viajes": 6169,
+        "distancia_media": 8.575837250769979,
+        "importe_medio": 37.43553736424057
+      },
+      {
+        "PULocationID": 15,
+        "num_viajes": 655,
+        "distancia_media": 10.601190839694654,
+        "importe_medio": 42.80111450381679
+      },
+      {
+        "PULocationID": 16,
+        "num_viajes": 1012,
+        "distancia_media": 8.912984189723321,
+        "importe_medio": 38.80488142292491
+      },
+      {
+        "PULocationID": 17,
+        "num_viajes": 12538,
+        "distancia_media": 5.181997128728667,
+        "importe_medio": 29.362630403573153
+      },
+      {
+        "PULocationID": 18,
+        "num_viajes": 2554,
+        "distancia_media": 8.513727486296006,
+        "importe_medio": 37.34960062646828
+      },
+      {
+        "PULocationID": 19,
+        "num_viajes": 1535,
+        "distancia_media": 9.685472312703585,
+        "importe_medio": 41.20619543973942
+      },
+      {
+        "PULocationID": 20,
+        "num_viajes": 1699,
+        "distancia_media": 8.304432018834609,
+        "importe_medio": 37.32792819305473
+      },
+      {
+        "PULocationID": 21,
+        "num_viajes": 2048,
+        "distancia_media": 7.3251318359375,
+        "importe_medio": 34.439458007812505
+      },
+      {
+        "PULocationID": 22,
+        "num_viajes": 2989,
+        "distancia_media": 7.166226162596185,
+        "importe_medio": 33.76739377718298
+      },
+      {
+        "PULocationID": 23,
+        "num_viajes": 139,
+        "distancia_media": 14.671510791366908,
+        "importe_medio": 65.09719424460432
+      },
+      {
+        "PULocationID": 24,
+        "num_viajes": 102416,
+        "distancia_media": 2.691604827370721,
+        "importe_medio": 22.60394528198719
+      },
+      {
+        "PULocationID": 25,
+        "num_viajes": 21965,
+        "distancia_media": 4.924433872069201,
+        "importe_medio": 29.753479626678804
+      },
+      {
+        "PULocationID": 26,
+        "num_viajes": 4066,
+        "distancia_media": 5.839328578455484,
+        "importe_medio": 30.12435809149039
+      },
+      {
+        "PULocationID": 27,
+        "num_viajes": 165,
+        "distancia_media": 10.297757575757577,
+        "importe_medio": 45.53175757575758
+      },
+      {
+        "PULocationID": 28,
+        "num_viajes": 5271,
+        "distancia_media": 8.62473724151015,
+        "importe_medio": 50.68226712198823
+      },
+      {
+        "PULocationID": 29,
+        "num_viajes": 2771,
+        "distancia_media": 9.693204619271022,
+        "importe_medio": 41.56054132082279
+      },
+      {
+        "PULocationID": 30,
+        "num_viajes": 84,
+        "distancia_media": 7.337380952380952,
+        "importe_medio": 33.616190476190475
+      },
+      {
+        "PULocationID": 31,
+        "num_viajes": 336,
+        "distancia_media": 9.221279761904764,
+        "importe_medio": 47.43416666666667
+      },
+      {
+        "PULocationID": 32,
+        "num_viajes": 1787,
+        "distancia_media": 9.304812534974818,
+        "importe_medio": 39.56921096810297
+      },
+      {
+        "PULocationID": 33,
+        "num_viajes": 28295,
+        "distancia_media": 5.198301113270897,
+        "importe_medio": 31.787827177946614
+      },
+      {
+        "PULocationID": 34,
+        "num_viajes": 2418,
+        "distancia_media": 5.200612076095945,
+        "importe_medio": 31.16413151364764
+      },
+      {
+        "PULocationID": 35,
+        "num_viajes": 10945,
+        "distancia_media": 6.030384650525355,
+        "importe_medio": 30.05257377798083
+      },
+      {
+        "PULocationID": 36,
+        "num_viajes": 8275,
+        "distancia_media": 5.53791903323263,
+        "importe_medio": 30.985151661631416
+      },
+      {
+        "PULocationID": 37,
+        "num_viajes": 12905,
+        "distancia_media": 5.572475784579621,
+        "importe_medio": 30.59346919798528
+      },
+      {
+        "PULocationID": 38,
+        "num_viajes": 2037,
+        "distancia_media": 12.174874815905744,
+        "importe_medio": 48.829111438389766
+      },
+      {
+        "PULocationID": 39,
+        "num_viajes": 14550,
+        "distancia_media": 6.6735539518900335,
+        "importe_medio": 32.85294501718215
+      },
+      {
+        "PULocationID": 40,
+        "num_viajes": 7362,
+        "distancia_media": 4.713573757131214,
+        "importe_medio": 30.326692474870963
+      },
+      {
+        "PULocationID": 41,
+        "num_viajes": 112528,
+        "distancia_media": 2.9917642720034094,
+        "importe_medio": 22.114611829944444
+      },
+      {
+        "PULocationID": 42,
+        "num_viajes": 55188,
+        "distancia_media": 4.032659092556354,
+        "importe_medio": 24.46413459447713
+      },
+      {
+        "PULocationID": 43,
+        "num_viajes": 634905,
+        "distancia_media": 2.2079630810908646,
+        "importe_medio": 23.21203483985789
+      },
+      {
+        "PULocationID": 44,
+        "num_viajes": 10,
+        "distancia_media": 22.267000000000003,
+        "importe_medio": 123.244
+      },
+      {
+        "PULocationID": 45,
+        "num_viajes": 61976,
+        "distancia_media": 3.5565554408158007,
+        "importe_medio": 28.565313185749346
+      },
+      {
+        "PULocationID": 46,
+        "num_viajes": 301,
+        "distancia_media": 12.244152823920263,
+        "importe_medio": 48.74744186046512
+      },
+      {
+        "PULocationID": 47,
+        "num_viajes": 2680,
+        "distancia_media": 7.499958955223881,
+        "importe_medio": 34.57276119402983
+      },
+      {
+        "PULocationID": 48,
+        "num_viajes": 1006892,
+        "distancia_media": 2.5364338876463535,
+        "importe_medio": 24.166695713145028
+      },
+      {
+        "PULocationID": 49,
+        "num_viajes": 12533,
+        "distancia_media": 5.324019787760314,
+        "importe_medio": 30.325394558365907
+      },
+      {
+        "PULocationID": 50,
+        "num_viajes": 242579,
+        "distancia_media": 2.6444495607616476,
+        "importe_medio": 23.88294312368352
+      },
+      {
+        "PULocationID": 51,
+        "num_viajes": 5364,
+        "distancia_media": 10.699483594332587,
+        "importe_medio": 43.146946308724864
+      },
+      {
+        "PULocationID": 52,
+        "num_viajes": 8961,
+        "distancia_media": 4.678772458430978,
+        "importe_medio": 30.320540118290374
+      },
+      {
+        "PULocationID": 53,
+        "num_viajes": 1143,
+        "distancia_media": 8.126089238845143,
+        "importe_medio": 39.64192475940508
+      },
+      {
+        "PULocationID": 54,
+        "num_viajes": 1671,
+        "distancia_media": 5.702710951526032,
+        "importe_medio": 34.12788749251945
+      },
+      {
+        "PULocationID": 55,
+        "num_viajes": 5572,
+        "distancia_media": 10.81391241923905,
+        "importe_medio": 44.04779253409908
+      },
+      {
+        "PULocationID": 56,
+        "num_viajes": 4423,
+        "distancia_media": 7.301790639837216,
+        "importe_medio": 45.03688898937374
+      },
+      {
+        "PULocationID": 57,
+        "num_viajes": 260,
+        "distancia_media": 8.124769230769232,
+        "importe_medio": 41.216692307692306
+      },
+      {
+        "PULocationID": 58,
+        "num_viajes": 152,
+        "distancia_media": 8.76519736842105,
+        "importe_medio": 38.62
+      },
+      {
+        "PULocationID": 59,
+        "num_viajes": 90,
+        "distancia_media": 8.387,
+        "importe_medio": 36.88833333333333
+      },
+      {
+        "PULocationID": 60,
+        "num_viajes": 2006,
+        "distancia_media": 7.75906779661017,
+        "importe_medio": 34.54633100697907
+      },
+      {
+        "PULocationID": 61,
+        "num_viajes": 24982,
+        "distancia_media": 5.503253942838842,
+        "importe_medio": 29.935386678408452
+      },
+      {
+        "PULocationID": 62,
+        "num_viajes": 8158,
+        "distancia_media": 5.402353518019122,
+        "importe_medio": 29.321526109340535
+      },
+      {
+        "PULocationID": 63,
+        "num_viajes": 3771,
+        "distancia_media": 6.822967382657121,
+        "importe_medio": 33.52411296738264
+      },
+      {
+        "PULocationID": 64,
+        "num_viajes": 687,
+        "distancia_media": 9.740931586608445,
+        "importe_medio": 42.80620087336245
+      },
+      {
+        "PULocationID": 65,
+        "num_viajes": 30585,
+        "distancia_media": 5.097072094163809,
+        "importe_medio": 31.773497139120487
+      },
+      {
+        "PULocationID": 66,
+        "num_viajes": 19892,
+        "distancia_media": 4.9953172129499315,
+        "importe_medio": 31.757207922783035
+      },
+      {
+        "PULocationID": 67,
+        "num_viajes": 1571,
+        "distancia_media": 7.04160407383832,
+        "importe_medio": 34.463246339910874
+      },
+      {
+        "PULocationID": 68,
+        "num_viajes": 1081770,
+        "distancia_media": 2.544449448588893,
+        "importe_medio": 26.04624861107256
+      },
+      {
+        "PULocationID": 69,
+        "num_viajes": 6145,
+        "distancia_media": 6.568152969894225,
+        "importe_medio": 32.488748576078116
+      },
+      {
+        "PULocationID": 70,
+        "num_viajes": 154030,
+        "distancia_media": 9.546597545932608,
+        "importe_medio": 66.25675232097578
+      },
+      {
+        "PULocationID": 71,
+        "num_viajes": 8824,
+        "distancia_media": 5.338463281958296,
+        "importe_medio": 28.543521078875806
+      },
+      {
+        "PULocationID": 72,
+        "num_viajes": 10416,
+        "distancia_media": 5.761401689708143,
+        "importe_medio": 29.515148809523826
+      },
+      {
+        "PULocationID": 73,
+        "num_viajes": 498,
+        "distancia_media": 8.189899598393575,
+        "importe_medio": 36.09614457831325
+      },
+      {
+        "PULocationID": 74,
+        "num_viajes": 100661,
+        "distancia_media": 3.091009626369696,
+        "importe_medio": 22.190989857044876
+      },
+      {
+        "PULocationID": 75,
+        "num_viajes": 252258,
+        "distancia_media": 2.724344282440992,
+        "importe_medio": 21.869837031927794
+      },
+      {
+        "PULocationID": 76,
+        "num_viajes": 18440,
+        "distancia_media": 6.901616594360085,
+        "importe_medio": 32.824669739696326
+      },
+      {
+        "PULocationID": 77,
+        "num_viajes": 4376,
+        "distancia_media": 6.7889008226691026,
+        "importe_medio": 32.00922531992686
+      },
+      {
+        "PULocationID": 78,
+        "num_viajes": 3218,
+        "distancia_media": 7.954070851460534,
+        "importe_medio": 35.320898073337446
+      },
+      {
+        "PULocationID": 79,
+        "num_viajes": 921396,
+        "distancia_media": 2.434349411110972,
+        "importe_medio": 22.963253660749857
+      },
+      {
+        "PULocationID": 80,
+        "num_viajes": 18823,
+        "distancia_media": 5.433695478935345,
+        "importe_medio": 33.26593954204963
+      },
+      {
+        "PULocationID": 81,
+        "num_viajes": 2042,
+        "distancia_media": 10.175754162585703,
+        "importe_medio": 40.86798237022525
+      },
+      {
+        "PULocationID": 82,
+        "num_viajes": 9325,
+        "distancia_media": 5.428550134048256,
+        "importe_medio": 37.17779517426275
+      },
+      {
+        "PULocationID": 83,
+        "num_viajes": 3568,
+        "distancia_media": 5.065126121076232,
+        "importe_medio": 38.96232903587443
+      },
+      {
+        "PULocationID": 84,
+        "num_viajes": 11,
+        "distancia_media": 15.595454545454546,
+        "importe_medio": 63.869090909090914
+      },
+      {
+        "PULocationID": 85,
+        "num_viajes": 5472,
+        "distancia_media": 5.78278691520468,
+        "importe_medio": 30.52036915204676
+      },
+      {
+        "PULocationID": 86,
+        "num_viajes": 3669,
+        "distancia_media": 14.787988552739165,
+        "importe_medio": 53.243524121013955
+      },
+      {
+        "PULocationID": 87,
+        "num_viajes": 225883,
+        "distancia_media": 4.366267625275033,
+        "importe_medio": 31.82697569095502
+      },
+      {
+        "PULocationID": 88,
+        "num_viajes": 120917,
+        "distancia_media": 4.715635518578857,
+        "importe_medio": 33.26017383825272
+      },
+      {
+        "PULocationID": 89,
+        "num_viajes": 13502,
+        "distancia_media": 6.119737816619762,
+        "importe_medio": 31.618460968745385
+      },
+      {
+        "PULocationID": 90,
+        "num_viajes": 634852,
+        "distancia_media": 2.159682146390027,
+        "importe_medio": 22.93883426373379
+      },
+      {
+        "PULocationID": 91,
+        "num_viajes": 9405,
+        "distancia_media": 6.178179691653375,
+        "importe_medio": 30.630467836257314
+      },
+      {
+        "PULocationID": 92,
+        "num_viajes": 3911,
+        "distancia_media": 7.887885451291231,
+        "importe_medio": 37.32786243927382
+      },
+      {
+        "PULocationID": 93,
+        "num_viajes": 18754,
+        "distancia_media": 9.844730724112193,
+        "importe_medio": 67.15566492481612
+      },
+      {
+        "PULocationID": 94,
+        "num_viajes": 1318,
+        "distancia_media": 7.704802731411229,
+        "importe_medio": 35.02814112291351
+      },
+      {
+        "PULocationID": 95,
+        "num_viajes": 9588,
+        "distancia_media": 6.566908635794747,
+        "importe_medio": 34.055284730913655
+      },
+      {
+        "PULocationID": 96,
+        "num_viajes": 263,
+        "distancia_media": 6.203574144486692,
+        "importe_medio": 36.79980988593156
+      },
+      {
+        "PULocationID": 97,
+        "num_viajes": 24167,
+        "distancia_media": 4.744388215334962,
+        "importe_medio": 29.04684404353044
+      },
+      {
+        "PULocationID": 98,
+        "num_viajes": 1072,
+        "distancia_media": 8.457639925373135,
+        "importe_medio": 36.17810634328358
+      },
+      {
+        "PULocationID": 99,
+        "num_viajes": 3,
+        "distancia_media": 8.89,
+        "importe_medio": 41.17666666666667
+      },
+      {
+        "PULocationID": 100,
+        "num_viajes": 607633,
+        "distancia_media": 2.4705899284601043,
+        "importe_medio": 25.214227667028943
+      },
+      {
+        "PULocationID": 101,
+        "num_viajes": 905,
+        "distancia_media": 10.833370165745855,
+        "importe_medio": 42.62917127071823
+      },
+      {
+        "PULocationID": 102,
+        "num_viajes": 1923,
+        "distancia_media": 5.908086323452938,
+        "importe_medio": 30.5656838273531
+      },
+      {
+        "PULocationID": 105,
+        "num_viajes": 4,
+        "distancia_media": 3.8249999999999997,
+        "importe_medio": 29.517500000000002
+      },
+      {
+        "PULocationID": 106,
+        "num_viajes": 3423,
+        "distancia_media": 5.337858603564125,
+        "importe_medio": 31.24561787905346
+      },
+      {
+        "PULocationID": 107,
+        "num_viajes": 800505,
+        "distancia_media": 2.1950972698484166,
+        "importe_medio": 22.468143222091086
+      },
+      {
+        "PULocationID": 108,
+        "num_viajes": 2151,
+        "distancia_media": 9.40251510925151,
+        "importe_medio": 40.02588098558809
+      },
+      {
+        "PULocationID": 109,
+        "num_viajes": 27,
+        "distancia_media": 14.211481481481481,
+        "importe_medio": 60.48333333333332
+      },
+      {
+        "PULocationID": 110,
+        "num_viajes": 1,
+        "distancia_media": 1.8,
+        "importe_medio": 12.5
+      },
+      {
+        "PULocationID": 111,
+        "num_viajes": 65,
+        "distancia_media": 6.644,
+        "importe_medio": 40.658307692307694
+      },
+      {
+        "PULocationID": 112,
+        "num_viajes": 15590,
+        "distancia_media": 4.730006414368184,
+        "importe_medio": 29.231447722899315
+      },
+      {
+        "PULocationID": 113,
+        "num_viajes": 567887,
+        "distancia_media": 2.1288757446463777,
+        "importe_medio": 22.75254763711782
+      },
+      {
+        "PULocationID": 114,
+        "num_viajes": 581173,
+        "distancia_media": 2.315554060494894,
+        "importe_medio": 23.086728564472267
+      },
+      {
+        "PULocationID": 115,
+        "num_viajes": 88,
+        "distancia_media": 11.994318181818182,
+        "importe_medio": 52.74613636363636
+      },
+      {
+        "PULocationID": 116,
+        "num_viajes": 36507,
+        "distancia_media": 4.206274139206181,
+        "importe_medio": 25.72869668830638
+      },
+      {
+        "PULocationID": 117,
+        "num_viajes": 3678,
+        "distancia_media": 13.232862969004897,
+        "importe_medio": 50.202593800978846
+      },
+      {
+        "PULocationID": 118,
+        "num_viajes": 80,
+        "distancia_media": 13.305999999999997,
+        "importe_medio": 59.23375000000001
+      },
+      {
+        "PULocationID": 119,
+        "num_viajes": 3531,
+        "distancia_media": 7.265295950155764,
+        "importe_medio": 36.15363636363636
+      },
+      {
+        "PULocationID": 120,
+        "num_viajes": 242,
+        "distancia_media": 6.0499173553719,
+        "importe_medio": 44.35909090909091
+      },
+      {
+        "PULocationID": 121,
+        "num_viajes": 2828,
+        "distancia_media": 7.453988684582743,
+        "importe_medio": 33.99630127298443
+      },
+      {
+        "PULocationID": 122,
+        "num_viajes": 1326,
+        "distancia_media": 9.234095022624437,
+        "importe_medio": 38.60987179487179
+      },
+      {
+        "PULocationID": 123,
+        "num_viajes": 2884,
+        "distancia_media": 6.569781553398058,
+        "importe_medio": 31.62029126213591
+      },
+      {
+        "PULocationID": 124,
+        "num_viajes": 2726,
+        "distancia_media": 8.425594277329424,
+        "importe_medio": 45.63765223771093
+      },
+      {
+        "PULocationID": 125,
+        "num_viajes": 202752,
+        "distancia_media": 2.5982520024463365,
+        "importe_medio": 24.791562647964096
+      },
+      {
+        "PULocationID": 126,
+        "num_viajes": 2333,
+        "distancia_media": 6.997205315045006,
+        "importe_medio": 33.9490741534505
+      },
+      {
+        "PULocationID": 127,
+        "num_viajes": 4173,
+        "distancia_media": 7.247088425593098,
+        "importe_medio": 34.14637191468967
+      },
+      {
+        "PULocationID": 128,
+        "num_viajes": 373,
+        "distancia_media": 7.0357908847185,
+        "importe_medio": 34.87922252010725
+      },
+      {
+        "PULocationID": 129,
+        "num_viajes": 15434,
+        "distancia_media": 4.949797848905018,
+        "importe_medio": 38.13972722560582
+      },
+      {
+        "PULocationID": 130,
+        "num_viajes": 12286,
+        "distancia_media": 8.39085137554941,
+        "importe_medio": 43.754245482663165
+      },
+      {
+        "PULocationID": 131,
+        "num_viajes": 2542,
+        "distancia_media": 8.717883556254916,
+        "importe_medio": 36.973107789142404
+      },
+      {
+        "PULocationID": 132,
+        "num_viajes": 1871978,
+        "distancia_media": 15.94284589882999,
+        "importe_medio": 82.69213575697557
+      },
+      {
+        "PULocationID": 133,
+        "num_viajes": 2887,
+        "distancia_media": 6.165005195704885,
+        "importe_medio": 32.395697956356074
+      },
+      {
+        "PULocationID": 134,
+        "num_viajes": 5352,
+        "distancia_media": 5.87982062780269,
+        "importe_medio": 57.27082399103136
+      },
+      {
+        "PULocationID": 135,
+        "num_viajes": 2110,
+        "distancia_media": 7.753890995260663,
+        "importe_medio": 36.71157819905214
+      },
+      {
+        "PULocationID": 136,
+        "num_viajes": 2017,
+        "distancia_media": 7.907357461576599,
+        "importe_medio": 35.85106593951413
+      },
+      {
+        "PULocationID": 137,
+        "num_viajes": 423429,
+        "distancia_media": 2.33577896176218,
+        "importe_medio": 22.395548935004214
+      },
+      {
+        "PULocationID": 138,
+        "num_viajes": 1261576,
+        "distancia_media": 9.695819348180434,
+        "importe_medio": 68.54097341738154
+      },
+      {
+        "PULocationID": 139,
+        "num_viajes": 2143,
+        "distancia_media": 11.959505366308914,
+        "importe_medio": 46.04411105926268
+      },
+      {
+        "PULocationID": 140,
+        "num_viajes": 784233,
+        "distancia_media": 2.4070601466656076,
+        "importe_medio": 23.05969123972103
+      },
+      {
+        "PULocationID": 141,
+        "num_viajes": 906380,
+        "distancia_media": 1.9852892936737307,
+        "importe_medio": 20.950064211479134
+      },
+      {
+        "PULocationID": 142,
+        "num_viajes": 1285093,
+        "distancia_media": 2.1935467549819228,
+        "importe_medio": 22.297701637157964
+      },
+      {
+        "PULocationID": 143,
+        "num_viajes": 446780,
+        "distancia_media": 2.2049403733381037,
+        "importe_medio": 21.56502092752568
+      },
+      {
+        "PULocationID": 144,
+        "num_viajes": 411159,
+        "distancia_media": 2.545092506791774,
+        "importe_medio": 24.61934066869494
+      },
+      {
+        "PULocationID": 145,
+        "num_viajes": 27250,
+        "distancia_media": 5.079395963302753,
+        "importe_medio": 41.8880803669725
+      },
+      {
+        "PULocationID": 146,
+        "num_viajes": 19133,
+        "distancia_media": 3.6584748863220615,
+        "importe_medio": 26.86715256363351
+      },
+      {
+        "PULocationID": 147,
+        "num_viajes": 1950,
+        "distancia_media": 6.738328205128205,
+        "importe_medio": 32.9864358974359
+      },
+      {
+        "PULocationID": 148,
+        "num_viajes": 434984,
+        "distancia_media": 2.9805369852684214,
+        "importe_medio": 25.553178438747043
+      },
+      {
+        "PULocationID": 149,
+        "num_viajes": 2353,
+        "distancia_media": 6.53308542286443,
+        "importe_medio": 31.720739481512954
+      },
+      {
+        "PULocationID": 150,
+        "num_viajes": 1321,
+        "distancia_media": 8.035768357305074,
+        "importe_medio": 38.58432248296745
+      },
+      {
+        "PULocationID": 151,
+        "num_viajes": 316390,
+        "distancia_media": 2.4408976895603476,
+        "importe_medio": 21.454999146622804
+      },
+      {
+        "PULocationID": 152,
+        "num_viajes": 29353,
+        "distancia_media": 3.4895622253262046,
+        "importe_medio": 23.365226722992553
+      },
+      {
+        "PULocationID": 153,
+        "num_viajes": 691,
+        "distancia_media": 6.949218523878437,
+        "importe_medio": 32.22315484804631
+      },
+      {
+        "PULocationID": 154,
+        "num_viajes": 628,
+        "distancia_media": 7.251624203821657,
+        "importe_medio": 40.92539808917197
+      },
+      {
+        "PULocationID": 155,
+        "num_viajes": 4182,
+        "distancia_media": 6.830148254423722,
+        "importe_medio": 34.3455882352941
+      },
+      {
+        "PULocationID": 156,
+        "num_viajes": 43,
+        "distancia_media": 16.813255813953486,
+        "importe_medio": 82.03279069767441
+      },
+      {
+        "PULocationID": 157,
+        "num_viajes": 6997,
+        "distancia_media": 5.886810061454908,
+        "importe_medio": 43.60290410175788
+      },
+      {
+        "PULocationID": 158,
+        "num_viajes": 403978,
+        "distancia_media": 2.6442646876810145,
+        "importe_medio": 25.118079375609412
+      },
+      {
+        "PULocationID": 159,
+        "num_viajes": 5430,
+        "distancia_media": 5.792408839779007,
+        "importe_medio": 29.79866114180478
+      },
+      {
+        "PULocationID": 160,
+        "num_viajes": 2354,
+        "distancia_media": 6.412909940526762,
+        "importe_medio": 38.12981733220052
+      },
+      {
+        "PULocationID": 161,
+        "num_viajes": 1866036,
+        "distancia_media": 2.4057823911221616,
+        "importe_medio": 25.203981091467853
+      },
+      {
+        "PULocationID": 162,
+        "num_viajes": 1384064,
+        "distancia_media": 2.3272027521848653,
+        "importe_medio": 24.5511082001981
+      },
+      {
+        "PULocationID": 163,
+        "num_viajes": 1138962,
+        "distancia_media": 2.4833848890480925,
+        "importe_medio": 25.224899900084054
+      },
+      {
+        "PULocationID": 164,
+        "num_viajes": 909312,
+        "distancia_media": 2.443620385522244,
+        "importe_medio": 24.865804388372403
+      },
+      {
+        "PULocationID": 165,
+        "num_viajes": 4415,
+        "distancia_media": 5.71319818799547,
+        "importe_medio": 29.344711211778023
+      },
+      {
+        "PULocationID": 166,
+        "num_viajes": 192404,
+        "distancia_media": 2.9727478638697726,
+        "importe_medio": 23.72970177335185
+      },
+      {
+        "PULocationID": 167,
+        "num_viajes": 3863,
+        "distancia_media": 6.611579083613772,
+        "importe_medio": 32.19512296142892
+      },
+      {
+        "PULocationID": 168,
+        "num_viajes": 10773,
+        "distancia_media": 5.837178130511467,
+        "importe_medio": 30.240970017636688
+      },
+      {
+        "PULocationID": 169,
+        "num_viajes": 3386,
+        "distancia_media": 7.195227406969878,
+        "importe_medio": 33.21629356172472
+      },
+      {
+        "PULocationID": 170,
+        "num_viajes": 1143467,
+        "distancia_media": 2.3266613203529256,
+        "importe_medio": 24.2859337523512
+      },
+      {
+        "PULocationID": 171,
+        "num_viajes": 1177,
+        "distancia_media": 8.358215802888699,
+        "importe_medio": 35.85873406966865
+      },
+      {
+        "PULocationID": 172,
+        "num_viajes": 79,
+        "distancia_media": 11.205569620253165,
+        "importe_medio": 43.13430379746835
+      },
+      {
+        "PULocationID": 173,
+        "num_viajes": 1815,
+        "distancia_media": 6.221972451790635,
+        "importe_medio": 30.84134986225896
+      },
+      {
+        "PULocationID": 174,
+        "num_viajes": 2092,
+        "distancia_media": 10.138675908221797,
+        "importe_medio": 42.30507170172082
+      },
+      {
+        "PULocationID": 175,
+        "num_viajes": 894,
+        "distancia_media": 9.438131991051455,
+        "importe_medio": 38.55865771812081
+      },
+      {
+        "PULocationID": 176,
+        "num_viajes": 33,
+        "distancia_media": 11.529090909090908,
+        "importe_medio": 42.11030303030304
+      },
+      {
+        "PULocationID": 177,
+        "num_viajes": 8265,
+        "distancia_media": 6.004337568058076,
+        "importe_medio": 30.92071264367819
+      },
+      {
+        "PULocationID": 178,
+        "num_viajes": 1055,
+        "distancia_media": 6.1648530805687205,
+        "importe_medio": 31.23236018957346
+      },
+      {
+        "PULocationID": 179,
+        "num_viajes": 9516,
+        "distancia_media": 4.539354770912148,
+        "importe_medio": 27.647040773434217
+      },
+      {
+        "PULocationID": 180,
+        "num_viajes": 1857,
+        "distancia_media": 6.965234248788369,
+        "importe_medio": 38.694421109316096
+      },
+      {
+        "PULocationID": 181,
+        "num_viajes": 19972,
+        "distancia_media": 5.180312437412378,
+        "importe_medio": 30.73656619266974
+      },
+      {
+        "PULocationID": 182,
+        "num_viajes": 3891,
+        "distancia_media": 8.795155487021333,
+        "importe_medio": 38.46334361346694
+      },
+      {
+        "PULocationID": 183,
+        "num_viajes": 844,
+        "distancia_media": 9.972808056872042,
+        "importe_medio": 39.594443127962094
+      },
+      {
+        "PULocationID": 184,
+        "num_viajes": 161,
+        "distancia_media": 9.296832298136646,
+        "importe_medio": 45.58124223602485
+      },
+      {
+        "PULocationID": 185,
+        "num_viajes": 1645,
+        "distancia_media": 7.97764133738602,
+        "importe_medio": 35.597635258358665
+      },
+      {
+        "PULocationID": 186,
+        "num_viajes": 1325958,
+        "distancia_media": 2.336727286987985,
+        "importe_medio": 25.5605902223144
+      },
+      {
+        "PULocationID": 187,
+        "num_viajes": 26,
+        "distancia_media": 11.125384615384617,
+        "importe_medio": 42.31807692307693
+      },
+      {
+        "PULocationID": 188,
+        "num_viajes": 15442,
+        "distancia_media": 5.626064628934075,
+        "importe_medio": 30.046817769718963
+      },
+      {
+        "PULocationID": 189,
+        "num_viajes": 7211,
+        "distancia_media": 5.127057273609764,
+        "importe_medio": 30.45722368603524
+      },
+      {
+        "PULocationID": 190,
+        "num_viajes": 1313,
+        "distancia_media": 4.885506473724294,
+        "importe_medio": 31.204645849200308
+      },
+      {
+        "PULocationID": 191,
+        "num_viajes": 4188,
+        "distancia_media": 11.027700573065896,
+        "importe_medio": 43.068225883476586
+      },
+      {
+        "PULocationID": 192,
+        "num_viajes": 1032,
+        "distancia_media": 7.044118217054264,
+        "importe_medio": 33.3977519379845
+      },
+      {
+        "PULocationID": 193,
+        "num_viajes": 7221,
+        "distancia_media": 4.206380002769699,
+        "importe_medio": 27.885727738540368
+      },
+      {
+        "PULocationID": 194,
+        "num_viajes": 1796,
+        "distancia_media": 6.669699331848552,
+        "importe_medio": 63.74013363028951
+      },
+      {
+        "PULocationID": 195,
+        "num_viajes": 8239,
+        "distancia_media": 9.417459643160576,
+        "importe_medio": 55.09551280495206
+      },
+      {
+        "PULocationID": 196,
+        "num_viajes": 4208,
+        "distancia_media": 6.462956273764259,
+        "importe_medio": 41.11418488593155
+      },
+      {
+        "PULocationID": 197,
+        "num_viajes": 9503,
+        "distancia_media": 5.991555298326845,
+        "importe_medio": 43.30520677680733
+      },
+      {
+        "PULocationID": 198,
+        "num_viajes": 4353,
+        "distancia_media": 5.525736273834136,
+        "importe_medio": 30.539483115093038
+      },
+      {
+        "PULocationID": 199,
+        "num_viajes": 16,
+        "distancia_media": 7.901875,
+        "importe_medio": 48.248125
+      },
+      {
+        "PULocationID": 200,
+        "num_viajes": 1609,
+        "distancia_media": 9.910764449968925,
+        "importe_medio": 41.037942821628334
+      },
+      {
+        "PULocationID": 201,
+        "num_viajes": 1227,
+        "distancia_media": 11.787188264058678,
+        "importe_medio": 45.9899511002445
+      },
+      {
+        "PULocationID": 202,
+        "num_viajes": 1992,
+        "distancia_media": 5.634528112449799,
+        "importe_medio": 35.41852911646587
+      },
+      {
+        "PULocationID": 203,
+        "num_viajes": 2354,
+        "distancia_media": 11.679536958368736,
+        "importe_medio": 49.693508920985536
+      },
+      {
+        "PULocationID": 204,
+        "num_viajes": 6,
+        "distancia_media": 14.273333333333333,
+        "importe_medio": 73.58333333333333
+      },
+      {
+        "PULocationID": 205,
+        "num_viajes": 5021,
+        "distancia_media": 10.309075881298549,
+        "importe_medio": 41.06437163911574
+      },
+      {
+        "PULocationID": 206,
+        "num_viajes": 43,
+        "distancia_media": 10.358372093023254,
+        "importe_medio": 49.87558139534884
+      },
+      {
+        "PULocationID": 207,
+        "num_viajes": 688,
+        "distancia_media": 6.190697674418605,
+        "importe_medio": 61.091293604651156
+      },
+      {
+        "PULocationID": 208,
+        "num_viajes": 2081,
+        "distancia_media": 9.159086977414708,
+        "importe_medio": 39.42404132628544
+      },
+      {
+        "PULocationID": 209,
+        "num_viajes": 83762,
+        "distancia_media": 4.146711157804254,
+        "importe_medio": 30.555522551992564
+      },
+      {
+        "PULocationID": 210,
+        "num_viajes": 3987,
+        "distancia_media": 8.43756960120391,
+        "importe_medio": 38.24354903436168
+      },
+      {
+        "PULocationID": 211,
+        "num_viajes": 330723,
+        "distancia_media": 2.4743868736072145,
+        "importe_medio": 24.661917949462204
+      },
+      {
+        "PULocationID": 212,
+        "num_viajes": 2464,
+        "distancia_media": 7.483478084415582,
+        "importe_medio": 34.33101866883117
+      },
+      {
+        "PULocationID": 213,
+        "num_viajes": 5162,
+        "distancia_media": 8.25677644323906,
+        "importe_medio": 36.13711739635799
+      },
+      {
+        "PULocationID": 214,
+        "num_viajes": 123,
+        "distancia_media": 9.14130081300813,
+        "importe_medio": 38.90040650406503
+      },
+      {
+        "PULocationID": 215,
+        "num_viajes": 8094,
+        "distancia_media": 10.3588411168767,
+        "importe_medio": 57.42016802569799
+      },
+      {
+        "PULocationID": 216,
+        "num_viajes": 14281,
+        "distancia_media": 5.854925425390384,
+        "importe_medio": 62.72463973111133
+      },
+      {
+        "PULocationID": 217,
+        "num_viajes": 2664,
+        "distancia_media": 5.062109609609609,
+        "importe_medio": 30.289012762762756
+      },
+      {
+        "PULocationID": 218,
+        "num_viajes": 4423,
+        "distancia_media": 9.72260908885372,
+        "importe_medio": 40.56279222247344
+      },
+      {
+        "PULocationID": 219,
+        "num_viajes": 6346,
+        "distancia_media": 12.549475260006307,
+        "importe_medio": 70.65711786952407
+      },
+      {
+        "PULocationID": 220,
+        "num_viajes": 2505,
+        "distancia_media": 8.536746506986027,
+        "importe_medio": 38.30277844311375
+      },
+      {
+        "PULocationID": 221,
+        "num_viajes": 140,
+        "distancia_media": 8.440857142857142,
+        "importe_medio": 44.29914285714286
+      },
+      {
+        "PULocationID": 222,
+        "num_viajes": 5133,
+        "distancia_media": 7.917110851353986,
+        "importe_medio": 36.16441652055328
+      },
+      {
+        "PULocationID": 223,
+        "num_viajes": 10077,
+        "distancia_media": 5.992471965862857,
+        "importe_medio": 45.65444775230726
+      },
+      {
+        "PULocationID": 224,
+        "num_viajes": 59768,
+        "distancia_media": 2.630167815553475,
+        "importe_medio": 23.100499431133724
+      },
+      {
+        "PULocationID": 225,
+        "num_viajes": 12825,
+        "distancia_media": 5.530451461988302,
+        "importe_medio": 30.165805847953227
+      },
+      {
+        "PULocationID": 226,
+        "num_viajes": 32600,
+        "distancia_media": 5.029358895705522,
+        "importe_medio": 38.13740644171783
+      },
+      {
+        "PULocationID": 227,
+        "num_viajes": 2010,
+        "distancia_media": 7.052378109452735,
+        "importe_medio": 34.11177611940298
+      },
+      {
+        "PULocationID": 228,
+        "num_viajes": 5351,
+        "distancia_media": 7.1714632778919825,
+        "importe_medio": 36.500685853111555
+      },
+      {
+        "PULocationID": 229,
+        "num_viajes": 696962,
+        "distancia_media": 2.0932361161727666,
+        "importe_medio": 22.352019191864173
+      },
+      {
+        "PULocationID": 230,
+        "num_viajes": 1341652,
+        "distancia_media": 3.187964159111309,
+        "importe_medio": 28.949863936399453
+      },
+      {
+        "PULocationID": 231,
+        "num_viajes": 543075,
+        "distancia_media": 3.112149353220094,
+        "importe_medio": 27.063763881600263
+      },
+      {
+        "PULocationID": 232,
+        "num_viajes": 60260,
+        "distancia_media": 3.6676284434118815,
+        "importe_medio": 27.626797543976128
+      },
+      {
+        "PULocationID": 233,
+        "num_viajes": 462169,
+        "distancia_media": 2.6940640761279946,
+        "importe_medio": 25.64133622116553
+      },
+      {
+        "PULocationID": 234,
+        "num_viajes": 1078756,
+        "distancia_media": 2.0692384283378273,
+        "importe_medio": 22.80289013456266
+      },
+      {
+        "PULocationID": 235,
+        "num_viajes": 3976,
+        "distancia_media": 7.965875251509052,
+        "importe_medio": 35.45491448692151
+      },
+      {
+        "PULocationID": 236,
+        "num_viajes": 1696283,
+        "distancia_media": 1.9665733194284327,
+        "importe_medio": 21.076323708955616
+      },
+      {
+        "PULocationID": 237,
+        "num_viajes": 1875620,
+        "distancia_media": 1.7796339130527572,
+        "importe_medio": 20.883208576362335
+      },
+      {
+        "PULocationID": 238,
+        "num_viajes": 772861,
+        "distancia_media": 2.282971025837763,
+        "importe_medio": 21.721682475891654
+      },
+      {
+        "PULocationID": 239,
+        "num_viajes": 1116641,
+        "distancia_media": 2.221455785700146,
+        "importe_medio": 22.037490616949032
+      },
+      {
+        "PULocationID": 240,
+        "num_viajes": 290,
+        "distancia_media": 8.603482758620691,
+        "importe_medio": 40.30337931034482
+      },
+      {
+        "PULocationID": 241,
+        "num_viajes": 2666,
+        "distancia_media": 8.854782445611404,
+        "importe_medio": 38.34701425356339
+      },
+      {
+        "PULocationID": 242,
+        "num_viajes": 2670,
+        "distancia_media": 8.218823970037453,
+        "importe_medio": 36.04442322097377
+      },
+      {
+        "PULocationID": 243,
+        "num_viajes": 9699,
+        "distancia_media": 6.123781833178679,
+        "importe_medio": 31.960018558614305
+      },
+      {
+        "PULocationID": 244,
+        "num_viajes": 31824,
+        "distancia_media": 5.189912958773256,
+        "importe_medio": 29.190418866264473
+      },
+      {
+        "PULocationID": 245,
+        "num_viajes": 37,
+        "distancia_media": 11.775945945945946,
+        "importe_medio": 56.45378378378377
+      },
+      {
+        "PULocationID": 246,
+        "num_viajes": 700666,
+        "distancia_media": 2.392272238127732,
+        "importe_medio": 24.789719252825062
+      },
+      {
+        "PULocationID": 247,
+        "num_viajes": 7392,
+        "distancia_media": 6.397901785714288,
+        "importe_medio": 34.1245413961039
+      },
+      {
+        "PULocationID": 248,
+        "num_viajes": 2471,
+        "distancia_media": 7.8708174828004855,
+        "importe_medio": 34.52040469445569
+      },
+      {
+        "PULocationID": 249,
+        "num_viajes": 924229,
+        "distancia_media": 2.2657408391210314,
+        "importe_medio": 22.989743288730544
+      },
+      {
+        "PULocationID": 250,
+        "num_viajes": 2189,
+        "distancia_media": 7.612763819095479,
+        "importe_medio": 34.44650982183646
+      },
+      {
+        "PULocationID": 251,
+        "num_viajes": 60,
+        "distancia_media": 10.810166666666666,
+        "importe_medio": 63.351166666666664
+      },
+      {
+        "PULocationID": 252,
+        "num_viajes": 1146,
+        "distancia_media": 8.493568935427575,
+        "importe_medio": 39.46798429319372
+      },
+      {
+        "PULocationID": 253,
+        "num_viajes": 248,
+        "distancia_media": 9.223266129032258,
+        "importe_medio": 52.508669354838716
+      },
+      {
+        "PULocationID": 254,
+        "num_viajes": 3771,
+        "distancia_media": 9.727637231503579,
+        "importe_medio": 39.918883585255905
+      },
+      {
+        "PULocationID": 255,
+        "num_viajes": 31549,
+        "distancia_media": 4.546788804716476,
+        "importe_medio": 29.075919046562525
+      },
+      {
+        "PULocationID": 256,
+        "num_viajes": 22079,
+        "distancia_media": 4.612493319443819,
+        "importe_medio": 30.315397889397158
+      },
+      {
+        "PULocationID": 257,
+        "num_viajes": 1802,
+        "distancia_media": 6.56745283018868,
+        "importe_medio": 34.39698668146504
+      },
+      {
+        "PULocationID": 258,
+        "num_viajes": 3229,
+        "distancia_media": 6.986370393310622,
+        "importe_medio": 33.34920408795292
+      },
+      {
+        "PULocationID": 259,
+        "num_viajes": 1993,
+        "distancia_media": 10.616372303060714,
+        "importe_medio": 42.03311088810837
+      },
+      {
+        "PULocationID": 260,
+        "num_viajes": 11075,
+        "distancia_media": 4.739654176072236,
+        "importe_medio": 35.976753950338605
+      },
+      {
+        "PULocationID": 261,
+        "num_viajes": 209412,
+        "distancia_media": 4.2454193169445755,
+        "importe_medio": 32.79444898095623
+      },
+      {
+        "PULocationID": 262,
+        "num_viajes": 547868,
+        "distancia_media": 2.463374444209186,
+        "importe_medio": 22.322911139179187
+      },
+      {
+        "PULocationID": 263,
+        "num_viajes": 747408,
+        "distancia_media": 2.244568910153491,
+        "importe_medio": 21.258016759253472
+      },
+      {
+        "PULocationID": 264,
+        "num_viajes": 113755,
+        "distancia_media": 3.7462628455892037,
+        "importe_medio": 30.246203859171164
+      },
+      {
+        "PULocationID": 265,
+        "num_viajes": 9454,
+        "distancia_media": 7.57482018193358,
+        "importe_medio": 79.44920774275433
+      }
+    ],
+    "rutas_top20": [
+      {
+        "PULocationID": 132,
+        "DOLocationID": 230,
+        "num_viajes": 91101,
+        "ingreso_total": 8608784.359999476
+      },
+      {
+        "PULocationID": 138,
+        "DOLocationID": 230,
+        "num_viajes": 81179,
+        "ingreso_total": 6466370.3300000075
+      },
+      {
+        "PULocationID": 141,
+        "DOLocationID": 236,
+        "num_viajes": 90208,
+        "ingreso_total": 1419283.280000017
+      },
+      {
+        "PULocationID": 142,
+        "DOLocationID": 239,
+        "num_viajes": 103579,
+        "ingreso_total": 1549848.2300000193
+      },
+      {
+        "PULocationID": 161,
+        "DOLocationID": 236,
+        "num_viajes": 108359,
+        "ingreso_total": 2410864.0099999886
+      },
+      {
+        "PULocationID": 161,
+        "DOLocationID": 237,
+        "num_viajes": 129852,
+        "ingreso_total": 2267855.090000017
+      },
+      {
+        "PULocationID": 162,
+        "DOLocationID": 237,
+        "num_viajes": 83807,
+        "ingreso_total": 1429306.7800000114
+      },
+      {
+        "PULocationID": 186,
+        "DOLocationID": 230,
+        "num_viajes": 84113,
+        "ingreso_total": 1774313.4600000035
+      },
+      {
+        "PULocationID": 236,
+        "DOLocationID": 141,
+        "num_viajes": 83282,
+        "ingreso_total": 1382080.9400000146
+      },
+      {
+        "PULocationID": 236,
+        "DOLocationID": 161,
+        "num_viajes": 90321,
+        "ingreso_total": 2021100.0899999992
+      },
+      {
+        "PULocationID": 236,
+        "DOLocationID": 236,
+        "num_viajes": 180831,
+        "ingreso_total": 2391614.150000032
+      },
+      {
+        "PULocationID": 236,
+        "DOLocationID": 237,
+        "num_viajes": 238361,
+        "ingreso_total": 3845079.230000053
+      },
+      {
+        "PULocationID": 237,
+        "DOLocationID": 141,
+        "num_viajes": 81349,
+        "ingreso_total": 1181215.3300000106
+      },
+      {
+        "PULocationID": 237,
+        "DOLocationID": 161,
+        "num_viajes": 115180,
+        "ingreso_total": 2031749.5500000147
+      },
+      {
+        "PULocationID": 237,
+        "DOLocationID": 162,
+        "num_viajes": 105736,
+        "ingreso_total": 1752707.6600000162
+      },
+      {
+        "PULocationID": 237,
+        "DOLocationID": 236,
+        "num_viajes": 276272,
+        "ingreso_total": 4343315.83000008
+      },
+      {
+        "PULocationID": 237,
+        "DOLocationID": 237,
+        "num_viajes": 184696,
+        "ingreso_total": 2585578.420000035
+      },
+      {
+        "PULocationID": 238,
+        "DOLocationID": 239,
+        "num_viajes": 83845,
+        "ingreso_total": 1146900.1900000104
+      },
+      {
+        "PULocationID": 239,
+        "DOLocationID": 142,
+        "num_viajes": 103943,
+        "ingreso_total": 1513533.9600000172
+      },
+      {
+        "PULocationID": 239,
+        "DOLocationID": 238,
+        "num_viajes": 98321,
+        "ingreso_total": 1361178.2600000172
+      }
+    ]
+  },
+  "viajes_admitidos_tras_filtros": 39833077
+}

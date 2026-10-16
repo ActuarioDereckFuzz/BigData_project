@@ -1,0 +1,84 @@
+{
+  "notebook": "05_01_diagnostico_benchmarking",
+  "fase": "baseline",
+  "creado_utc": "2026-10-15T22:44:24+00:00",
+  "periodo": {
+    "meses": [
+      "2024-01"
+    ],
+    "inicio_inclusivo": "2024-01-01T00:00:00",
+    "fin_exclusivo": "2024-02-01T00:00:00",
+    "archivos": [
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-01.parquet"
+    ],
+    "tamano_archivos_mib": 47.647
+  },
+  "ambiente": {
+    "spark_version": "4.1.3",
+    "spark_app_id": "local-1792104247905",
+    "spark_app_name": "05_01_diagnostico_benchmarking",
+    "spark_master": "local[*]",
+    "default_parallelism": 12,
+    "shuffle_partitions": "200",
+    "adaptive_query_execution": "true",
+    "adaptive_coalesce_partitions": "true",
+    "session_time_zone": "Etc/UTC",
+    "driver_memory": "no especificada",
+    "executor_memory": "no especificada",
+    "python_version": "3.11.17",
+    "system": "Linux",
+    "logical_cpu_count": 12,
+    "spark_ui_url": "http://455f3b1cac15:4040"
+  },
+  "filtros": {
+    "fecha": "fecha_inicio <= tpep_pickup_datetime < fecha_fin_exclusiva",
+    "PULocationID": "no nulo",
+    "DOLocationID": "no nulo",
+    "trip_distance": "0 < distancia < 100",
+    "total_amount": "monto >= 0"
+  },
+  "condiciones": {
+    "cache_spark": "clearCache antes de cada ejecución",
+    "cache_sistema_operativo": "no controlado",
+    "accion": "collect sobre resultados agregados pequeños",
+    "cronometro": "time.perf_counter (Python driver)"
+  },
+  "resultados": [
+    {
+      "workload": "zonas_agregadas",
+      "calentamientos": 1,
+      "repeticiones": 5,
+      "tiempos_s": [
+        0.787897313000002,
+        0.5878139460000043,
+        0.5782319990000033,
+        0.5585735220000032,
+        0.5735663939999966
+      ],
+      "mediana_s": 0.5782319990000033,
+      "media_s": 0.6172166348000019,
+      "desviacion_s": 0.09599553641799163,
+      "minimo_s": 0.5585735220000032,
+      "maximo_s": 0.787897313000002,
+      "filas_salida": 258
+    },
+    {
+      "workload": "rutas_top20",
+      "calentamientos": 1,
+      "repeticiones": 5,
+      "tiempos_s": [
+        0.6093872029999972,
+        0.5735081950000023,
+        0.5968330799999961,
+        0.5659811959999956,
+        0.5384536090000012
+      ],
+      "mediana_s": 0.5735081950000023,
+      "media_s": 0.5768326565999985,
+      "desviacion_s": 0.02766574128888906,
+      "minimo_s": 0.5384536090000012,
+      "maximo_s": 0.6093872029999972,
+      "filas_salida": 20
+    }
+  ]
+}

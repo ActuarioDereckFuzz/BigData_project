@@ -1,0 +1,106 @@
+{
+  "notebook": "05_01_diagnostico_benchmarking",
+  "fase": "baseline",
+  "creado_utc": "2026-10-15T23:04:20+00:00",
+  "periodo": {
+    "meses": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "inicio_inclusivo": "2024-01-01T00:00:00",
+    "fin_exclusivo": "2025-01-01T00:00:00",
+    "archivos": [
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-01.parquet",
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-02.parquet",
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-03.parquet",
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-04.parquet",
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-05.parquet",
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-06.parquet",
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-07.parquet",
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-08.parquet",
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-09.parquet",
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-10.parquet",
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-11.parquet",
+      "data/raw/taxi/year=2024/yellow_tripdata_2024-12.parquet"
+    ],
+    "tamano_archivos_mib": 660.898
+  },
+  "ambiente": {
+    "spark_version": "4.1.3",
+    "spark_app_id": "local-1792105414782",
+    "spark_app_name": "05_01_diagnostico_benchmarking",
+    "spark_master": "local[*]",
+    "default_parallelism": 12,
+    "shuffle_partitions": "200",
+    "adaptive_query_execution": "true",
+    "adaptive_coalesce_partitions": "true",
+    "session_time_zone": "Etc/UTC",
+    "driver_memory": "no especificada",
+    "executor_memory": "no especificada",
+    "python_version": "3.11.17",
+    "system": "Linux",
+    "logical_cpu_count": 12,
+    "spark_ui_url": "http://455f3b1cac15:4040"
+  },
+  "filtros": {
+    "fecha": "fecha_inicio <= tpep_pickup_datetime < fecha_fin_exclusiva",
+    "PULocationID": "no nulo",
+    "DOLocationID": "no nulo",
+    "trip_distance": "0 < distancia < 100",
+    "total_amount": "monto >= 0"
+  },
+  "condiciones": {
+    "cache_spark": "clearCache antes de cada ejecución",
+    "cache_sistema_operativo": "no controlado",
+    "accion": "collect sobre resultados agregados pequeños",
+    "cronometro": "time.perf_counter (Python driver)"
+  },
+  "resultados": [
+    {
+      "workload": "zonas_agregadas",
+      "calentamientos": 1,
+      "repeticiones": 5,
+      "tiempos_s": [
+        2.685525871999971,
+        2.1164089110000077,
+        2.0140305269999317,
+        2.0364051240001118,
+        1.9486184260001664
+      ],
+      "mediana_s": 2.0364051240001118,
+      "media_s": 2.160197772000038,
+      "desviacion_s": 0.2997258663598738,
+      "minimo_s": 1.9486184260001664,
+      "maximo_s": 2.685525871999971,
+      "filas_salida": 263
+    },
+    {
+      "workload": "rutas_top20",
+      "calentamientos": 1,
+      "repeticiones": 5,
+      "tiempos_s": [
+        2.296129849999943,
+        2.1550970690000213,
+        2.2348110779998933,
+        2.3138521560001664,
+        2.930639166999981
+      ],
+      "mediana_s": 2.296129849999943,
+      "media_s": 2.386105864000001,
+      "desviacion_s": 0.310679889568545,
+      "minimo_s": 2.1550970690000213,
+      "maximo_s": 2.930639166999981,
+      "filas_salida": 20
+    }
+  ]
+}

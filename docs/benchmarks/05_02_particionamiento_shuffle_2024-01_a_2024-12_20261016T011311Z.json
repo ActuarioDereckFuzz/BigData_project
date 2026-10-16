@@ -1,0 +1,272 @@
+{
+  "notebook": "05_02_particionamiento_shuffle",
+  "fecha_utc": "2026-10-16T01:13:11+00:00",
+  "modo": "exploracion",
+  "periodo": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "archivos": [
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-01.parquet",
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-02.parquet",
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-03.parquet",
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-04.parquet",
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-05.parquet",
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-06.parquet",
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-07.parquet",
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-08.parquet",
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-09.parquet",
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-10.parquet",
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-11.parquet",
+    "data/raw/taxi/year=2024/yellow_tripdata_2024-12.parquet"
+  ],
+  "tamano_archivos_mib": 660.898,
+  "ambiente": {
+    "spark_version": "4.1.3",
+    "application_id": "local-1792112954403",
+    "app_name": "05_02_particionamiento_shuffle",
+    "master": "local[4]",
+    "parallelism": 4,
+    "cpu_logicas": 12,
+    "sistema": "Linux",
+    "python": "3.11.17",
+    "ui": "http://8e7968dee514:4040",
+    "timezone": "Etc/UTC",
+    "configuracion_inicial": {
+      "spark.sql.shuffle.partitions": "200",
+      "spark.sql.adaptive.enabled": "true",
+      "spark.sql.adaptive.coalescePartitions.enabled": "true"
+    }
+  },
+  "referencia_funcional": "docs/benchmarks/05_01_referencia_logica_2024-01_a_2024-12.json",
+  "condiciones": {
+    "workload": "rutas_top20",
+    "filtros": "idénticos a 05_01",
+    "accion": "collect de 20 resultados",
+    "cronometro": "Python time.perf_counter",
+    "cache_spark": "clearCache antes de cada ejecución",
+    "cache_sistema_operativo": "no controlado",
+    "intercalado": "rotación de escenario por ronda",
+    "calentamientos": 1,
+    "repeticiones": 3
+  },
+  "distribucion_entrada": {
+    "medida": true,
+    "registros_por_particion": [
+      {
+        "particion": 0,
+        "registros": 7324636
+      },
+      {
+        "particion": 1,
+        "registros": 7027827
+      },
+      {
+        "particion": 2,
+        "registros": 6976704
+      },
+      {
+        "particion": 3,
+        "registros": 6870178
+      },
+      {
+        "particion": 4,
+        "registros": 5855260
+      },
+      {
+        "particion": 5,
+        "registros": 5778472
+      }
+    ]
+  },
+  "resultados_a_particionamiento": [
+    {
+      "grupo": "particion",
+      "nombre": "sin_cambio",
+      "metadatos": {
+        "transformacion": "sin_cambio",
+        "aqe": true,
+        "shuffle_partitions": 200
+      },
+      "calentamientos": 1,
+      "repeticiones": 3,
+      "filas_salida": 20,
+      "tiempos_s": [
+        2.677649,
+        2.398302,
+        2.400127
+      ],
+      "mediana_s": 2.400126905000434,
+      "media_s": 2.49202596933416,
+      "desviacion_s": 0.1607567036612646,
+      "minimo_s": 2.398302171000978,
+      "maximo_s": 2.6776488320010685
+    },
+    {
+      "grupo": "particion",
+      "nombre": "coalesce_3",
+      "metadatos": {
+        "transformacion": "coalesce_3",
+        "aqe": true,
+        "shuffle_partitions": 200
+      },
+      "calentamientos": 1,
+      "repeticiones": 3,
+      "filas_salida": 20,
+      "tiempos_s": [
+        2.946442,
+        2.927171,
+        2.830124
+      ],
+      "mediana_s": 2.927171281000483,
+      "media_s": 2.901245688333802,
+      "desviacion_s": 0.06234235681826637,
+      "minimo_s": 2.830123910000111,
+      "maximo_s": 2.9464418740008114
+    },
+    {
+      "grupo": "particion",
+      "nombre": "repartition_12",
+      "metadatos": {
+        "transformacion": "repartition_12",
+        "aqe": true,
+        "shuffle_partitions": 200
+      },
+      "calentamientos": 1,
+      "repeticiones": 3,
+      "filas_salida": 20,
+      "tiempos_s": [
+        15.920195,
+        15.39963,
+        15.898749
+      ],
+      "mediana_s": 15.898749444000714,
+      "media_s": 15.739524847000212,
+      "desviacion_s": 0.2945526250292743,
+      "minimo_s": 15.399630211999465,
+      "maximo_s": 15.920194885000456
+    },
+    {
+      "grupo": "particion",
+      "nombre": "repartition_24",
+      "metadatos": {
+        "transformacion": "repartition_24",
+        "aqe": true,
+        "shuffle_partitions": 200
+      },
+      "calentamientos": 1,
+      "repeticiones": 3,
+      "filas_salida": 20,
+      "tiempos_s": [
+        16.239477,
+        15.416596,
+        15.39282
+      ],
+      "mediana_s": 15.41659571299897,
+      "media_s": 15.682964214665844,
+      "desviacion_s": 0.48210105105701,
+      "minimo_s": 15.392819645998316,
+      "maximo_s": 16.23947728500025
+    }
+  ],
+  "resultados_b_shuffle_aqe": [
+    {
+      "grupo": "shuffle",
+      "nombre": "12_sin_AQE",
+      "metadatos": {
+        "transformacion": "sin_cambio",
+        "aqe": false,
+        "shuffle_partitions": 12
+      },
+      "calentamientos": 1,
+      "repeticiones": 3,
+      "filas_salida": 20,
+      "tiempos_s": [
+        2.473362,
+        2.334546,
+        2.307731
+      ],
+      "mediana_s": 2.334545584000807,
+      "media_s": 2.371879523667303,
+      "desviacion_s": 0.088903598203612,
+      "minimo_s": 2.307730538001124,
+      "maximo_s": 2.4733624489999784
+    },
+    {
+      "grupo": "shuffle",
+      "nombre": "200_sin_AQE",
+      "metadatos": {
+        "transformacion": "sin_cambio",
+        "aqe": false,
+        "shuffle_partitions": 200
+      },
+      "calentamientos": 1,
+      "repeticiones": 3,
+      "filas_salida": 20,
+      "tiempos_s": [
+        2.661786,
+        2.695157,
+        2.591427
+      ],
+      "mediana_s": 2.6617863199990097,
+      "media_s": 2.649456475332651,
+      "desviacion_s": 0.05295279873799083,
+      "minimo_s": 2.5914265350002097,
+      "maximo_s": 2.6951565709987335
+    },
+    {
+      "grupo": "shuffle",
+      "nombre": "12_con_AQE",
+      "metadatos": {
+        "transformacion": "sin_cambio",
+        "aqe": true,
+        "shuffle_partitions": 12
+      },
+      "calentamientos": 1,
+      "repeticiones": 3,
+      "filas_salida": 20,
+      "tiempos_s": [
+        2.469962,
+        2.404404,
+        2.415486
+      ],
+      "mediana_s": 2.415486477999366,
+      "media_s": 2.4299507706667405,
+      "desviacion_s": 0.03509063925344955,
+      "minimo_s": 2.4044042479999916,
+      "maximo_s": 2.4699615860008635
+    },
+    {
+      "grupo": "shuffle",
+      "nombre": "200_con_AQE",
+      "metadatos": {
+        "transformacion": "sin_cambio",
+        "aqe": true,
+        "shuffle_partitions": 200
+      },
+      "calentamientos": 1,
+      "repeticiones": 3,
+      "filas_salida": 20,
+      "tiempos_s": [
+        2.406966,
+        2.785286,
+        2.385464
+      ],
+      "mediana_s": 2.406965719999789,
+      "media_s": 2.5259052776673343,
+      "desviacion_s": 0.22488756898444293,
+      "minimo_s": 2.385463939001056,
+      "maximo_s": 2.7852861740011576
+    }
+  ]
+}
